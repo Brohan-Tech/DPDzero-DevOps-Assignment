@@ -42,8 +42,8 @@ curl http://localhost/service1/ping
 curl http://localhost/service2/hello
 ```
 All services are part of a Docker network. Inside that network:
-    1.service_1 is reachable by name (http://service_1:8001)
-    2.service_2 is reachable by name (http://service_2:8002)
-    3.NGINX uses these names in its config to forward traffic correctly.
+    <br>1.service_1 is reachable by name (http://service_1:8001)
+    <br>2.service_2 is reachable by name (http://service_2:8002)
+    <br>3.NGINX uses these names in its config to forward traffic correctly.
 
 Hence,allowing the containers to reach each other by their service names.This keeps everything organized behind a single port while still running multiple services.
