@@ -5,6 +5,7 @@ This project demonstrates routing multiple backend services through a single NGI
 ## Setup Instructions
 
 The project structure is as follows:
+```
 .
 ├── docker-compose.yaml # Docker Compose setup
 ├── nginx/
@@ -17,12 +18,12 @@ The project structure is as follows:
 │ ├── Dockerfile # Flask service Dockerfile
 │ └── app.py # Flask app
 └── README.md # Project documentation
-
+```
 How everything is setup:
-    1.Each service has its own Dockerfile
-    2.A single docker-compose.yaml defines how to build and run them
-    3.Docker Compose creates a private network so services can reach each other by name
-    4.NGINX handles all requests on localhost:80 and routes based on the path prefix
+    <br>1.Each service has its own Dockerfile
+    <br>2.A single docker-compose.yaml defines how to build and run them
+    <br>3.Docker Compose creates a private network so services can reach each other by name
+    <br>4.NGINX handles all requests on localhost:80 and routes based on the path prefix
 
 ## How Routing Works
 
