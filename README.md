@@ -6,16 +6,17 @@ This project demonstrates routing multiple backend services through a single NGI
 
 The project structure is as follows:
 .
-├── docker-compose.yaml         # Defines and connects all services
+├── docker-compose.yaml # Docker Compose setup
 ├── nginx/
-│   ├── Dockerfile              # Builds NGINX reverse proxy container
-│   └── nginx.conf              # Routing config for service_1 and service_2
+│ ├── Dockerfile # Builds NGINX container
+│ └── nginx.conf # Reverse proxy config
 ├── service_1/
-│   ├── Dockerfile              # Builds the Go service container
-│   └── main.go                 # Go application exposing /ping and /hello
+│ ├── Dockerfile # Go service Dockerfile
+│ └── main.go # Go app
 ├── service_2/
-│   ├── Dockerfile              # Builds the Flask (Python) service container
-│   └── app.py                  # Flask app exposing /ping and /hello
+│ ├── Dockerfile # Flask service Dockerfile
+│ └── app.py # Flask app
+└── README.md # Project documentation
 
 How everything is setup:
     1.Each service has its own Dockerfile
