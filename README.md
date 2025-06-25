@@ -2,6 +2,20 @@
 
 This project demonstrates routing multiple backend services through a single NGINX reverse proxy using Docker Compose.
 
+## 🐳 Docker Compose Setup
+
+To build and run the full backend system using Docker Compose:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Brohan-Tech/DPDzero-DevOps-Assignment.git
+   cd DPDzero-DevOps-Assignment
+   
+2. Build and start the containers:
+   ```
+   docker compose up --build
+   ```
+
 ## Setup Instructions
 
 The project structure is as follows:
