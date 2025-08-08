@@ -1,6 +1,6 @@
-# DevOps Intern Assignment: Nginx Reverse Proxy + Docker
+# DevOps Project: Nginx Reverse Proxy + Docker
 
-This assignment demonstrates routing multiple backend services through a single NGINX reverse proxy using Docker Compose.
+This Project demonstrates routing multiple backend services through a single NGINX reverse proxy using Docker Compose.
 
 ## 🐳 Docker Compose Setup
 
